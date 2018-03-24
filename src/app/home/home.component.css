@@ -1,0 +1,155 @@
+
+body {
+	height: 1000px
+}
+.ha-bg-parallax {
+	background: url(http://merivaara.episerverhosting.com/MerivaaraCom/General/Segments/Patient-ward-segment.jpg?__imgop=1&maxwidth=980) 50% -0 no-repeat fixed;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	-webkit-background-size: cover;
+	background-size: cover;
+	min-height: 650px;
+	margin: 0 auto;
+	width: 100%;
+	display: table;
+	vertical-align: middle;
+	position: relative;
+}
+.ha-parallax-body {
+	vertical-align: middle;
+	background: rgba(0,0,0,0.45);
+	text-align: center;
+	color: #FFFFFF;
+	min-height: 650px;
+}
+.vertical .carousel-inner {
+	height: 100%;
+}
+.carousel.vertical .item {
+	-webkit-transition: 0.6s ease-in-out top;
+	-moz-transition: 0.6s ease-in-out top;
+	-ms-transition: 0.6s ease-in-out top;
+	-o-transition: 0.6s ease-in-out top;
+	transition: 0.6s ease-in-out top;
+}
+.carousel.vertical .active {
+	top: 0;
+}
+.carousel.vertical .next {
+	top: 100%;
+}
+.carousel.vertical .prev {
+	top: -100%;
+}
+.carousel.vertical .next.left, .carousel.vertical .prev.right {
+	top: 0;
+}
+.carousel.vertical .active.left {
+	top: -100%;
+}
+.carousel.vertical .active.right {
+	top: 100%;
+}
+.carousel.vertical .item {
+	left: 0;
+}
+.carousel-indicators {
+	position: absolute;
+	bottom: 10px;
+	left: unset;
+	right: 2%;
+	z-index: 15;
+	width: 1%;
+	padding-left: 0;
+	margin-left: -30%;
+	text-align: right;
+	list-style: none;
+	top: 30%;
+}
+#carousel-example-generic {
+	top: 200px;
+}
+.carousel-indicators li {
+	float: none
+}
+#carousel-example-generic h3 {
+	font: normal 50px poppinsregular;
+	color: #FFFFFF;
+	margin: 0;
+	text-shadow: 0 0 10px #666;
+}
+#carousel-example-generic h1 {
+	font: normal 80px/61px poppinssemibold;
+	color: #FFFFFF;
+	margin: 0;
+	text-shadow: 0 0 10px #666;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,900,700,600,500,300,200,100,800);
+
+h2 {
+    color: #4C4C4C;
+    word-spacing: 5px;
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom:30px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.ion-minus{
+    padding:0px 10px;
+}
+
+.team{
+	background-color:#f6f6f6;
+	padding:60px 0px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.team h4 {
+    margin-top: 20px;
+    color: #5db4c0;
+}
+
+.team .fa{
+    color: #5db4c0;
+    font-size: 18px;
+    margin-top: 10px;
+    padding: 3px;
+}
+
+/*Font-awesome integration*/
+@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+/*Google font integration*/
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+#contact{
+    background-color:#f1f1f1;
+    font-family: 'Roboto', sans-serif;
+}
+
+#contact .well{
+    margin-top:30px;
+    border-radius:0;
+}
+
+#contact .form-control{
+    border-radius: 0;
+    border:2px solid #1e1e1e;
+}
+
+#contact button{
+    border-radius:0;
+    border:2px solid #1e1e1e;
+}
+
+#contact .row{
+    margin-bottom:30px;
+}
+
+@media (max-width: 768px) { 
+    #contact iframe {
+        margin-bottom: 15px;
+    }
+    
+}
