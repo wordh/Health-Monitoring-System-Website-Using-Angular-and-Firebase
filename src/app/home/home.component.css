@@ -1,9 +1,15 @@
 
+/*Font-awesome integration*/
+@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+/*Google font integration*/
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,900,700,600,500,300,200,100,800);
+
 body {
 	height: 1000px
 }
 .ha-bg-parallax {
-	background: url(http://merivaara.episerverhosting.com/MerivaaraCom/General/Segments/Patient-ward-segment.jpg?__imgop=1&maxwidth=980) 50% -0 no-repeat fixed;
+	background: url(http://static.businessworld.in/article/article_extra_large_image/1470398270_uzN8Y6_health-shutterstock.jpg) 50% -0 no-repeat fixed;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	-webkit-background-size: cover;
@@ -85,7 +91,7 @@ body {
 	text-shadow: 0 0 10px #666;
 }
 
-@import url(https://fonts.googleapis.com/css?family=Raleway:400,900,700,600,500,300,200,100,800);
+
 
 h2 {
     color: #4C4C4C;
@@ -117,11 +123,6 @@ h2 {
     margin-top: 10px;
     padding: 3px;
 }
-
-/*Font-awesome integration*/
-@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
-/*Google font integration*/
-@import url('https://fonts.googleapis.com/css?family=Roboto');
 
 #contact{
     background-color:#f1f1f1;

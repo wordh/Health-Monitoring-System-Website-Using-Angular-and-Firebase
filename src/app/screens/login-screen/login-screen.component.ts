@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {NgForm} from '@angular/forms';
 import { AuthService } from '../../auth-service';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-login-screen',
@@ -9,7 +10,7 @@ import { AuthService } from '../../auth-service';
 })
 export class LoginScreenComponent implements OnInit {
 
-  constructor(private authService:AuthService) { }
+  constructor(private authService:AuthService, private router:Router) { }
 
   ngOnInit() {
   }
@@ -19,5 +20,6 @@ export class LoginScreenComponent implements OnInit {
     const password = form.value.password;
 
     this.authService.login(email,password);
+    this.router.navigateByUrl('patient');
   }
 }
