@@ -6,8 +6,11 @@
  
 
  
-	<h2>USER Health Information</h2>
+	<h2>User Health Information</h2>
 	<div class="col-md-3">
     <pre *ngFor="let item of items | async">{{item}}</pre>
-	</div>
+  </div>
+    <form (ngSubmit) = "onSubmit(logoutForm)" #logoutForm="ngForm">
+      <button type="submit"  class="btn-block btn-primary"> LOG OUT </button>
+    </form>
 </div>
