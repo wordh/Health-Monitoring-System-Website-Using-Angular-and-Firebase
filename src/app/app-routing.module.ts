@@ -4,6 +4,8 @@ import { SignUpScreenComponent } from './screens/sign-up-screen/sign-up-screen.c
 import { LoginScreenComponent } from './screens/login-screen/login-screen.component';
 import { HomeComponent } from './home/home.component';
 import { PatientComponent } from './patient/patient.component';
+import { DoctorComponent } from './doctor/doctor.component';
+import { DoctorLoginComponent } from './screens/doctor-login/doctor-login.component';
 
  
 
@@ -12,7 +14,9 @@ const appRoutes: Routes = [
     {path: 'signup',component:SignUpScreenComponent},
     {path: 'login',component:LoginScreenComponent},
     {path: '',component:HomeComponent},
-    {path: 'patient',component:PatientComponent}
+    {path: 'patient',component:PatientComponent},
+    {path: 'doctor',component:DoctorComponent},
+    {path: 'doctorlogin',component:DoctorLoginComponent}
 
 ];
 

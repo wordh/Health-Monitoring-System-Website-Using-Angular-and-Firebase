@@ -4,12 +4,13 @@ import { AuthService } from '../../auth-service';
 import {Router} from '@angular/router';
 import * as firebase from 'firebase';
 
+
 @Component({
-  selector: 'app-login-screen',
-  templateUrl: './login-screen.component.html',
-  styleUrls: ['./login-screen.component.css']
+  selector: 'app-doctor-login',
+  templateUrl: './doctor-login.component.html',
+  styleUrls: ['./doctor-login.component.css']
 })
-export class LoginScreenComponent implements OnInit {
+export class DoctorLoginComponent implements OnInit {
 
   constructor(private authService:AuthService, private router:Router) { }
 
@@ -22,12 +23,8 @@ export class LoginScreenComponent implements OnInit {
 
     this.authService.login(email,password);
     if(firebase.auth().currentUser.email==email){
-      this.router.navigateByUrl('patient');
+      this.router.navigateByUrl('doctor');
     }
     
   }
 }
-
-
-//private router:Router;
-  //      this.router.navigateByUrl('patient');

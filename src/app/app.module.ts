@@ -18,6 +18,8 @@ import { DetailComponent } from './profile/patients/patient/detail/detail.compon
 import { PatientComponent } from './patient/patient.component';
 
 import { environment } from '../environments/environment';
+import { DoctorComponent } from './doctor/doctor.component';
+import { DoctorLoginComponent } from './screens/doctor-login/doctor-login.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +30,9 @@ import { environment } from '../environments/environment';
     ProfileComponent,
     PatientListComponent,
     DetailComponent,
-    PatientComponent
+    PatientComponent,
+    DoctorComponent,
+    DoctorLoginComponent
   ],
   imports: [
     BrowserModule,

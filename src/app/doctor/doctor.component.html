@@ -1,0 +1,29 @@
+<div class="container-fluid" style="text-align:center">
+	<div style="color: blue;">
+		<h1>{{title}}</h1>
+		<h3>{{description}}</h3>
+	</div>
+ 
+
+ 
+	<h2>All Patient Health Information</h2>
+	<div class="col-md-3">
+    <pre *ngFor="let item of items | async">
+      <div class ="col-md-3">
+        Name {{item.name}}
+        Age {{item.age}}
+        Heart Rate {{item.heartRate}}
+        High Pressure {{item.highPressure}}
+        Low Pressure {{item.lowPressure}}
+        Mean Pressure {{item.meanPressure}}
+        Pulse Rate {{item.pulseRate}}
+        Resp Rate {{item.restRate}}
+        SPO2 {{item.spO2}}
+        Temperature {{item.temperature}}
+      </div>
+    </pre>
+  </div>
+    <form (ngSubmit) = "onSubmit(logoutForm)" #logoutForm="ngForm">
+      <button type="submit"  class="btn-block btn-primary"> LOG OUT </button>
+    </form>
+</div>
