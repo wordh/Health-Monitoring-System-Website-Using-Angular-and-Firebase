@@ -7,23 +7,45 @@
 
  
 	<h2>All Patient Health Information</h2>
-	<div class="col-md-3">
+	<div class="col-md-10">
     <pre *ngFor="let item of items | async">
       <div class ="col-md-3">
-        Name {{item.name}}
-        Age {{item.age}}
-        Heart Rate {{item.heartRate}}
-        High Pressure {{item.highPressure}}
-        Low Pressure {{item.lowPressure}}
-        Mean Pressure {{item.meanPressure}}
-        Pulse Rate {{item.pulseRate}}
-        Resp Rate {{item.restRate}}
-        SPO2 {{item.spO2}}
-        Temperature {{item.temperature}}
+          <table class="table table-bordered"align="center">
+              <thead>
+                <tr>
+                  <th>Name</th>
+                  <th>Age</th>
+                  <th>Heart Rate</th>
+                  <th>High Pressure</th>
+                  <th>Low Pressure</th>
+                  <th>Mean Pressure</th>
+                  <th>Pulse Rate</th>
+                  <th>Resp Rate</th>
+                  <th>SPO2</th>
+                  <th>Temperature</th>
+                </tr>
+               </thead>
+               <tbody> 
+                <tr>
+                     <td>{{item.name}}</td>
+                      <td>{{item.age}}</td>
+                      <td>{{item.heartRate}}</td>
+                      <td>{{item.highPressure}}</td>
+                      <td>{{item.lowPressure}}</td>
+                      <td>{{item.meanPressure}}</td>
+                      <td>{{item.pulseRate}}</td>
+                      <td>{{item.restRate}}</td>
+                      <td>{{item.spO2}}</td>
+                      <td>{{item.temperature}}</td>
+                </tr>
+              </tbody>  
+              </table>
+        
       </div>
     </pre>
   </div>
     <form (ngSubmit) = "onSubmit(logoutForm)" #logoutForm="ngForm">
-      <button type="submit"  class="btn-block btn-primary"> LOG OUT </button>
+      <button type="submit"  class="btn btn-primary btn-lg"> LOG OUT </button>
     </form>
 </div>
+
