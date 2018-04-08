@@ -3,6 +3,9 @@ import { NgModule } from '@angular/core';
 import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule} from 'angularfire2/database';
 
+import { ChartModule} from 'angular-highcharts';
+
+
 
 
 import { AppComponent } from './app.component';
@@ -39,7 +42,8 @@ import { DoctorLoginComponent } from './screens/doctor-login/doctor-login.compon
     AppRoutingModule,
     FormsModule,
     AngularFireModule.initializeApp(environment.firebase),
-    AngularFireDatabaseModule
+    AngularFireDatabaseModule,
+    ChartModule
   ],
   
   providers: [AuthService],

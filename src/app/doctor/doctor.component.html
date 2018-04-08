@@ -10,6 +10,7 @@
 	<div class="col-md-10">
     <pre *ngFor="let item of items | async">
       <div class ="col-md-3">
+          
           <table class="table table-bordered"align="center">
               <thead>
                 <tr>
@@ -40,12 +41,20 @@
                 </tr>
               </tbody>  
               </table>
-        
+              
       </div>
+      
     </pre>
   </div>
+
+    <button class="btn btn-primary btn-lg" (click)="add()">Add Point!!</button>
+    <div [chart]="chart"></div>
+          
     <form (ngSubmit) = "onSubmit(logoutForm)" #logoutForm="ngForm">
       <button type="submit"  class="btn btn-primary btn-lg"> LOG OUT </button>
     </form>
+
+    
+    
 </div>
 
