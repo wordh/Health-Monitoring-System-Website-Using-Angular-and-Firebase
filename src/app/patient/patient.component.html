@@ -7,12 +7,44 @@
 
  
 	<h2>User Health Information</h2>
-	<div class="col-md-3">
-    <pre *ngFor="let item of items | async">{{item}}</pre>
+	<div class="col-md-10">
+		
+		<table class="table table-bordered"align="center">
+			<thead>
+				<tr>
+					<th>Name</th>
+					<th>Age</th>
+					<th>Heart Rate</th>
+					<th>High Pressure</th>
+					<th>Low Pressure</th>
+					<th>Mean Pressure</th>
+					<th>Pulse Rate</th>
+					<th>Resp Rate</th>
+					<th>SPO2</th>
+					<th>Temperature</th>
+				</tr>
+			 </thead>
+			 <tbody> 
+				<tr>
+						 <td>{{boltesi[5]}}</td>
+							<td>{{boltesi[0]}}</td>
+							<td>{{boltesi[1]}}</td>
+							<td>{{boltesi[2]}}</td>
+							<td>{{boltesi[3]}}</td>
+							<td>{{boltesi[4]}}</td>
+							<td>{{boltesi[6]}}</td>
+							<td>{{boltesi[7]}}</td>
+							<td>{{boltesi[8]}}</td>
+							<td>{{boltesi[9]}}</td>
+				</tr>
+			</tbody>  
+			</table>
+
+			<form (ngSubmit) = "onSubmit(logoutForm)" #logoutForm="ngForm">
+				<button type="submit"  class="btn btn-primary btn-lg"> LOG OUT </button>
+			</form>
   </div>
-  <form (ngSubmit) = "onSubmit(logoutForm)" #logoutForm="ngForm">
-    <button type="submit"  class="btn btn-primary btn-lg"> LOG OUT </button>
-  </form>
+  
 </div>
 
 <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">

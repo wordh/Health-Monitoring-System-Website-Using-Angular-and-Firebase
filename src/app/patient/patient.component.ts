@@ -11,19 +11,24 @@ import {NgForm} from '@angular/forms';
   selector: 'app-patient',
   templateUrl: './patient.component.html',
   styleUrls: ['./patient.component.css']
+
 })
 export class PatientComponent implements OnInit {
 
   items: Observable<any[]>;
-  items2: Observable<any[]>;
+  list: Array<any>;
   //itemValue = '';
- 
+ boltesi = [];
   
   constructor(public db: AngularFireDatabase,private router:Router) {
     //firebase.auth().currentUser.uid
     //if (db.list('Users/'+firebase.auth().currentUser.uid))
-    
+      let count = 0;
       this.items = db.list('Users/'+firebase.auth().currentUser.uid).valueChanges();
+      this.items.forEach(element => {
+        let value= Object.keys(element).map(key=>element[key]);
+         this.boltesi=value;
+      });
       
     
   }
