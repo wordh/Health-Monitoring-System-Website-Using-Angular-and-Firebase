@@ -1,3 +1,6 @@
+
+<script src="https://code.highcharts.com/modules/boost.js"></script>
+
 <div class="container-fluid" style="text-align:center">
 	<div style="color: blue;">
 		<h1>{{title}}</h1>
@@ -26,19 +29,22 @@
 			 </thead>
 			 <tbody> 
 				<tr>
-						 <td>{{boltesi[5]}}</td>
+						 <td>{{boltesi[6]}}</td>
 							<td>{{boltesi[0]}}</td>
-							<td>{{boltesi[1]}}</td>
 							<td>{{boltesi[2]}}</td>
 							<td>{{boltesi[3]}}</td>
 							<td>{{boltesi[4]}}</td>
-							<td>{{boltesi[6]}}</td>
+							<td>{{boltesi[5]}}</td>
 							<td>{{boltesi[7]}}</td>
-							<td>{{boltesi[8]}}</td>
 							<td>{{boltesi[9]}}</td>
+							<td>{{boltesi[10]}}</td>
+							<td>{{boltesi[11]}}</td>
 				</tr>
 			</tbody>  
 			</table>
+
+			<div [chart]="chart"></div>
+			<div [chart]="chart2"></div>
 
 			<form (ngSubmit) = "onSubmit(logoutForm)" #logoutForm="ngForm">
 				<button type="submit"  class="btn btn-primary btn-lg"> LOG OUT </button>
